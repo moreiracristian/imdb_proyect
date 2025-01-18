@@ -1,8 +1,8 @@
-# Análisis de Sentimientos en Reseñas de IMDB
+# Análisis de sentimientos en reseñas de IMDB
 
 Este proyecto utiliza técnicas de Procesamiento de Lenguaje Natural (NLP) y aprendizaje automático para clasificar el sentimiento de reseñas de películas como **positivas** o **negativas**.  
 
-## Tabla de Contenidos
+## Tabla de contenidos
 
 - [Descripción del Proyecto](#descripción-del-proyecto)
 - [Estructura del Proyecto](#estructura-del-proyecto)
@@ -17,13 +17,13 @@ Este proyecto utiliza técnicas de Procesamiento de Lenguaje Natural (NLP) y apr
 
 ---
 
-## Descripción del Proyecto
+## Descripción del proyecto
 
 El objetivo principal del proyecto es construir un modelo que pueda clasificar reseñas de películas basándose en su contenido textual. Se trabaja con un dataset balanceado y desbalanceado, aplicando varias técnicas de vectorización y modelos de aprendizaje supervisado para la predicción de sentimientos.
 
 ---
 
-## Estructura del Proyecto
+## Estructura del proyecto
 
 ```plaintext
 ├── data/
@@ -53,7 +53,7 @@ Posteriormente, se balanceó utilizando técnicas de submuestreo
 
 ---
 
-## Procesamiento de Datos
+## Procesamiento de datos
 
 1. **Limpieza del Dataset:** Se eliminan caracteres especiales y se procesa el texto para el análisis.
 2. **Representación del Texto:**
@@ -65,7 +65,7 @@ Posteriormente, se balanceó utilizando técnicas de submuestreo
 
 ---
 
-## Modelos Implementados
+## Modelos implementados
 Se implementaron los siguientes modelos de clasificación:
 
 1. **Support Vector Machine (SVM)**
@@ -75,7 +75,7 @@ Se implementaron los siguientes modelos de clasificación:
 
 ---
 
-## Evaluación de Modelos
+## Evaluación de modelos
 Los modelos fueron evaluados utilizando las siguientes métricas:
 
 - **Exactitud (Accuracy)**
@@ -83,7 +83,7 @@ Los modelos fueron evaluados utilizando las siguientes métricas:
 - **Reporte de Clasificación**
 - **Matriz de Confusión**
 
-Resultados Clave:
+## Resultados clave:
 ```table
 Modelo	Exactitud	F1 Score (Promedio)
 SVM	83.6%	0.84
