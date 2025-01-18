@@ -112,8 +112,8 @@ Los modelos fueron evaluados utilizando las siguientes métricas:
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/sentiment-analysis-imdb.git
-cd sentiment-analysis-imdb
+git clone https://github.com/tu-usuario/imdb_proyect.git
+cd imdb_proyect
 ```
 
 2. Instala las dependencias:
