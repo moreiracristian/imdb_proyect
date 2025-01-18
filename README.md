@@ -30,9 +30,9 @@ El objetivo principal del proyecto es construir un modelo que pueda clasificar r
 │   ├── crudo/
 │   │   └── IMDB_Dataset.csv  # Dataset original
 ├── notebooks/
-│   └── sentiment_analysis.ipynb  # Código principal del análisis
-├── outputs/
-│   └── modelos/  # Modelos entrenados
+│   └── nlp_sentiment_analysis.ipynb  # Código principal del análisis y modelos entrenados
+├── src/
+│   └── requirements.txt/  # Dependencias
 ├── README.md  # Este archivo
 ```
 
@@ -66,6 +66,7 @@ Posteriormente, se balanceó utilizando técnicas de submuestreo
 ---
 
 ## Modelos implementados
+
 Se implementaron los siguientes modelos de clasificación:
 
 1. **Support Vector Machine (SVM)**
@@ -76,6 +77,7 @@ Se implementaron los siguientes modelos de clasificación:
 ---
 
 ## Evaluación de modelos
+
 Los modelos fueron evaluados utilizando las siguientes métricas:
 
 - **Exactitud (Accuracy)**
@@ -84,17 +86,20 @@ Los modelos fueron evaluados utilizando las siguientes métricas:
 - **Matriz de Confusión**
 
 ## Resultados clave:
-```table
-Modelo	Exactitud	F1 Score (Promedio)
-SVM	83.6%	0.84
-Árbol de Decisión	68.4%	0.68
-Naive Bayes	65.0%	0.65
-Regresión Logística	81.9%	0.82
+
+```markdown
+| Modelo              | Exactitud  | F1 Score (Promedio) |
+|---------------------|------------|---------------------|
+| SVM                 | 83.6%      | 0.84                |
+| Árbol de Decisión   | 68.4%      | 0.68                |
+| Naive Bayes         | 65.0%      | 0.65                |
+| Regresión Logística | 81.9%      | 0.82                |
 ```
 
 ---
 
 ## Requisitos del Sistema
+
 - Python 3.8 o superior
 - Librerías:
     - pandas
@@ -104,6 +109,7 @@ Regresión Logística	81.9%	0.82
 ---
 
 ## Instrucciones de Ejecución
+
 1. Clona el repositorio:
 ```bash
 git clone https://github.com/tu-usuario/sentiment-analysis-imdb.git
@@ -123,11 +129,13 @@ jupyter notebook notebooks/nlp_sentiment_analysis.ipynb
 ---
 
 ## Resultados
+
 El modelo **SVM con kernel lineal** mostró el mejor desempeño, logrando una precisión del 83.6% y un F1 Score promedio de 0.84. La matriz de confusión mostró un buen equilibrio entre las clases positivas y negativas.
 
 ---
 
 ## Mejoras Futuras
+
 - Implementar técnicas avanzadas de NLP como modelos preentrenados (BERT o GPT).
 - Incluir más datos para aumentar la robustez del modelo.
 - Aplicar técnicas de optimización de hiperparámetros.
